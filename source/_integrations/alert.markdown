@@ -102,6 +102,7 @@ notifiers:
   description: "List of `notification` integrations to use for alerts."
   required: true
   type: list
+  To obtain the notifiers installed on you instance of Home Assistant, go to developers tools, services, notify.
 data:
   description: "Dictionary of extra parameters to send to the notifier."
   required: false
