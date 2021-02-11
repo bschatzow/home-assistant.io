@@ -13,7 +13,7 @@ ha_iot_class:
 
 The `notify` integration makes it possible to send notifications to a wide variety of platforms. To use it you have to setup at least one notification target (notifier), check the [integrations list](/integrations/#notifications) for one that fits your use case.
 
-If you want to send notifications to the Home Assistant web interface, you may use the [Persistent Notification integration](/integrations/persistent_notification/).
+If you want to send notifications to the Home Assistant web interface, you may use the [Persistent Notification integration](/integrations/persistent_notification/). To verify the installed notification platform are install and to find the correct names for them, go to Development tools, services, notify.
 
 ## Service
 
