@@ -11,7 +11,7 @@ ha_codeowners:
 ha_domain: persistent_notification
 ---
 
-The `persistent_notification` integration can be used to show a notification on the frontend that has to be dismissed by the user.
+The `persistent_notification` integration can be used to show a notification on the frontend that has to be dismissed by the user. The notification shows on the side bar as a number.  Click on it will give more details.  Suggest that a imgage be included.
 
 <p class='img'>
   <img src='/images/screenshots/persistent-notification.png' />
