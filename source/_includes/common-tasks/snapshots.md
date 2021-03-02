@@ -1,6 +1,6 @@
 ## Snapshots
 
-Snapshots are a backup of your Home Assistant and add-on data and configuration. They are stored in a compressed archive file (.tar). Snapshots are made from the Supervisor Snapshot panel. There is also a service available which allows you to trigger the creation of a snapshot from an automation. Backups are stored in the /backup directory.
+Snapshots are a backup of your Home Assistant and add-on data and configuration. They are not a backup of your OS. They are stored in a compressed archive file (.tar). Snapshots are made from the Supervisor Snapshot panel. There is also a service available which allows you to trigger the creation of a snapshot from an automation. Backups are stored in the /backup directory.
 
 A full snapshot includes the following directories:
 
@@ -10,7 +10,7 @@ A full snapshot includes the following directories:
 * `ssl`
 * `media`
 
-A partial snapshot consists of any number of the above default directories and installed add-ons.
+A partial snapshot consists of any number of the above default directories and installed add-ons.  There is a good chance that the database file will be corrupted during the snapshot restore.  A good practice is to stop the database prior to making your snapshot.
 
 ### Making a Snapshot from the UI
 
@@ -26,7 +26,7 @@ You can make use of snapshots which you have copied off of a previous install to
 
 For restoring a snapshot at any other time, vist the Supervisor Snapshot panel in your UI and use the following steps:
 
-1. Select "Upload Snapshot" from the icon in the upper right of the page.
+1. Select "Upload Snapshot" from the three dot icon in the upper right of the page.
 2. Click on the folder icon to navigate to your snapshot .tar file and select it.
 
 When the upload is completed, you will be presented with the snapshot restore dialog for restoring it, and can then choose to restore in full or in part by manually selecting individual items.
